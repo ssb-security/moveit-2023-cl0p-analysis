@@ -31,7 +31,7 @@ The attack lifecycle included:
 4. Persistence and database access
 5. Data exfiltration over HTTP channels
 
-## MITRE ATT&CK Mapping (Sample)
+## MITRE ATT&CK Mapping
 
 | Kill Chain Stage    | Tactic              | Technique | Description                         |
 | ----------------    | ------------------  | --------- | ---------------------------------   |
