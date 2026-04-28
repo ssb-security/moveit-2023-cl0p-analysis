@@ -1,0 +1,32 @@
+# Financially driven, TA505 is a cybercrime group that certainly speaks Russian. In addition to providing ransomware
+as a service, the gang has been aggressively disseminating
+several remote access trojans. The ransomware gang has been
+operating since 2014 and is well-known for its constantly
+changing use of malware and tactics, widespread malware
+distribution, and ransomware campaigns worldwide [9].
+TA505 APT group heavily relies on malicious software to
+carry out fraudulent activities and now has evolved to be a
+sophisticated threat actor innovating its ways to gain access
+to the victim’s system and environment for monetization [10].
+There are countless malwares in Cl0p’s toolkit that enables the
+group to maintain persistence in the victim’s environment. The
+most famous from those malwares can be listed as follows:
+1. FlawedAmmyy/FlawedGrace: It is a remote access trojan
+aiming collection of data and communication with the Command and Control (C2) enabling it to listen to the commands
+and perform exfiltration or to download more malware components [13][15].
+2. SDBot:It’s a remote access trojan that’s utilized as a
+backdoor to communicate with the Command and control. It
+can find its way to expolit vulnerabilites and drop a copy of
+itself in removable disks and network share to further infect
+the network laterally. The RAT has ability to hide its existence
+using and be persistant [13][14].
+3. Truebot: It is a third party malware used by TA505 as a
+initial stage downloader module to collect information about
+the victim. Once the persistance is established, Truebot is used
+to download malware compoments and load shell code or
+DLLs. The malware has ability to run them and delete itself
+making it hard to identify its existance [8][13].
+4. DEWMODE: This is a custom webshell to interact with
+the underlying SQL database and access and exfiltrate data.
+The PHP webshell was used to in campaign against Accellion
+FTA devices to steal sensitive data [12][16].
