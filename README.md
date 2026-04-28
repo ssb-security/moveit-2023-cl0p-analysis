@@ -72,4 +72,4 @@ The attack lifecycle included:
 * Security reporting and advisory writing
 
 ## Full Report
-
+https://github.com/ssb-security/moveit-2023-cl0p-analysis/blob/71d471ceb732cc1897d855b7d9930eca648a713e/Analyzing%20Adversory%20Attack%20on%20MOVEit%20File%20Transfer%20Application%20-%20Report.pdf
