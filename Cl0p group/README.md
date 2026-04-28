@@ -1,4 +1,4 @@
-## Threat Actor Overview: TA505 / Cl0p
+## I. Threat Actor Overview: TA505 / Cl0p
 
 TA505 is a financially motivated cybercrime group believed to be Russian-speaking and active since approximately 2014. The group is closely associated with the Cl0p ransomware ecosystem and operates primarily through ransomware-as-a-service (RaaS) and large-scale malware distribution campaigns.
 
