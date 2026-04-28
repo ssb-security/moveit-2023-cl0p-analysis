@@ -1,5 +1,3 @@
-# moveit-2023-cl0p-analysis
-
 # MOVEit 2023 Exploitation (Cl0p) – Threat Intelligence Analysis
 
 ## Overview
