@@ -33,12 +33,15 @@ The attack lifecycle included:
 
 ## MITRE ATT&CK Mapping (Sample)
 
-| Tactic         | Technique | Description                       |
-| -------------- | --------- | --------------------------------- |
-| Initial Access | T1190     | Exploit Public-Facing Application |
-| Execution      | T1202     | Indirect Command Execution        |
-| Persistence    | T1053     | Scheduled Task                    |
-| Exfiltration   | T1041     | Exfiltration Over C2 Channel      |
+| Kill Chain Stage    | Tactic              | Technique | Description                         |
+| ----------------    | ------------------  | --------- | ---------------------------------   |
+| Reconnaissance      | Reconnaissance      | T1590     | Gathering victimnetwork information |
+| Weaponization       | Initial Access      | T119      | Exploit Public-Facing Application   |
+| Delivery            | Command and Control | T1105     | Ingress Tool Transfer               |
+| Exploitation        | Execution           | T1202     | Execution through API               |
+| Installation        | Persistence         | T1053     | Scheduled Task                      |
+| Command and Control | Command and Control | T1104     | Multi-stage channels                |
+|  Action on Objective| Exfiltratio         | T1041     | Exfiltration Over C2 Channels       |
 
 ## Impact
 
@@ -70,4 +73,3 @@ The attack lifecycle included:
 
 ## Full Report
 
-[View full academic report](./report/full_report.pdf)
