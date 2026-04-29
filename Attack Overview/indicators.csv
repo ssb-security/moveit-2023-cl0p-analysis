@@ -1,4 +1,4 @@
-type,indicator,description,confidence,source
+Type,Indicator,Description,Confidence,Source
 CVE,CVE-2023-34362,SQL Injection in MOVEit Transfer (primary zero-day),High,NIST NVD / Progress Software
 CVE,CVE-2023-35036,Secondary SQL Injection in MOVEit Transfer,High,NIST NVD / Progress Software
 CVE,CVE-2023-35708,Third SQL Injection in MOVEit Transfer,High,NIST NVD / Progress Software
