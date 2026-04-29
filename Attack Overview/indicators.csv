@@ -1,0 +1,38 @@
+type,indicator,description,confidence,source
+CVE,CVE-2023-34362,SQL Injection in MOVEit Transfer (primary zero-day),High,NIST NVD / Progress Software
+CVE,CVE-2023-35036,Secondary SQL Injection in MOVEit Transfer,High,NIST NVD / Progress Software
+CVE,CVE-2023-35708,Third SQL Injection in MOVEit Transfer,High,NIST NVD / Progress Software
+Filename,human.aspx,LEMURLOOT webshell masquerading as MOVEit component,High,Mandiant / SentinelOne
+Filename,human2.aspx,LEMURLOOT C# payload dropped in Temp directory,High,SentinelOne
+Process,w3wp.exe,IIS worker process used to write webshell payload,Medium,SentinelOne
+Process,svchost.exe,Used to initiate IIS worker process during exploitation,Medium,SentinelOne
+DLL,moveitisapi.dll,Abused to execute SQL injection via specific HTTP headers,High,Huntress / SentinelOne
+File-path-pattern,<Temp>\<8-char-random>\,Pseudo-random naming scheme for webshell working directory,High,SentinelOne
+HTTP-header,X-siLock-Comment,Used for webshell authentication (hard-coded password),High,Rapid7 / Mandiant
+HTTP-header,X-siLock-Step1,Controls webshell behavior; -1 = Azure exfil / -2 = delete user,High,Rapid7
+HTTP-header,X-siLock-Step2,Specifies folder ID for file retrieval,High,Rapid7
+HTTP-header,X-siLock-Step3,Specifies file ID for file retrieval,High,Rapid7
+URL-path,/guestaccess.aspx,Targeted by POST requests during SQL injection probing,High,Mandiant
+Account-name,Health Check Service,Admin account created by LEMURLOOT for persistent access,High,Rapid7
+Malware-family,LEMURLOOT,Custom C# webshell for MOVEit Transfer platform,High,CISA
+Malware-family,DEWMODE,PHP webshell used in Accellion FTA campaign,High,Mandiant
+Malware-family,Truebot,Initial-stage downloader used by TA505,High,CISA
+Malware-family,FlawedGrace,RAT used for C2 and data collection,High,MITRE ATT&CK
+Malware-family,SDBot,RAT used as backdoor / lateral movement,High,MITRE ATT&CK
+Threat-actor,TA505,Primary threat actor group,High,MITRE ATT&CK (G0092)
+Threat-actor,Cl0p,Ransomware brand operated by TA505,High,CISA Advisory AA23-158A
+Threat-actor,Lace Tempest,Microsoft tracking name for Cl0p affiliate,High,Microsoft
+MITRE-technique,T1190,Exploit Public-Facing Application,High,MITRE ATT&CK
+MITRE-technique,T1590,Gathering Victim Network Information,High,MITRE ATT&CK
+MITRE-technique,T1036,Masquerading,High,MITRE ATT&CK
+MITRE-technique,T1105,Ingress Tool Transfer,High,MITRE ATT&CK
+MITRE-technique,T1202,Execution through API,High,MITRE ATT&CK
+MITRE-technique,T1005,Data from Local System,High,MITRE ATT&CK
+MITRE-technique,T1082,System Information Discovery,High,MITRE ATT&CK
+MITRE-technique,T1053,Scheduled Task,Medium,MITRE ATT&CK
+MITRE-technique,T1027,Obfuscated Files or Information,High,MITRE ATT&CK
+MITRE-technique,T1104,Multi-Stage Channels,High,MITRE ATT&CK
+MITRE-technique,T1041,Exfiltration Over C2 Channel,High,MITRE ATT&CK
+Tool,Shodan,Used for reconnaissance to identify vulnerable MOVEit hosts,High,Huntress
+Tool,Metasploit,Had existing module for GoAnywhere CVE-2023-0669 exploitation,High,ITpro
+Ransom-deadline,2023-06-14,Cl0p deadline for victims to pay before public exposure,High,Rapid7
